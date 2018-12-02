@@ -1,0 +1,6 @@
+npm install font-awesome
+yarn global add @angular/cli
+ng g c products/product-detail --flat
+ng new hello-world
+ng
+https://www.bongtechs.com/angular2-architecture/
