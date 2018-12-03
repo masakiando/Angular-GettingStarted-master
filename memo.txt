@@ -4,3 +4,5 @@ ng g c products/product-detail --flat
 ng new hello-world
 ng
 https://www.bongtechs.com/angular2-architecture/
+http://neos21.hatenablog.com/entry/2017/09/25/080000
+https://www.bongtechs.com/angular2-architecture/
