@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HTML",
+    "count": 10
+  },
+  {
+    "name": "CSS",
+    "count": 8
+  },
+  {
+    "name": "React",
+    "count": 6
+  },
+  {
+    "name": "Node.js",
+    "count": 4
+  },
+  {
+    "name": "Angular.js",
+    "count": 2
+  },
+  {
+    "name": "PostgreSQL",
+    "count": 2
+  }
+]

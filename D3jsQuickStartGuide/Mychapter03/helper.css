@@ -1,0 +1,56 @@
+.center, .center-column, .top, .right, .bottom, .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  flex-direction: column;
+}
+
+.top { align-items: flex-start; }
+.right { justify-content: flex-end; }
+.bottom { align-items: flex-end; }
+.left { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.testTd {
+  box-sizing: border-box;
+}
+
+.portfolio_header {
+  background: linear-gradient(rgb(40, 38, 52), rgb(18, 52, 86)) rgb(40, 38, 52);
+}
+
+.portfolio_header {
+  background-color: rgb(27, 117, 187);
+  background-image: linear-gradient(rgb(27, 117, 187) 40%, rgb(43, 56, 143) 100%);
+}
+
+.sponsors-5743 {
+    background: linear-gradient(-30deg, #cf215bE5, #cf215bE5 45%, #cf215b 45%) #fff;
+}
+
+.events__blue {
+    background-color: #1b71bb;
+    background-image: linear-gradient(#1b71bb 60%,#01a6c1 100%);
+}
+
+.events__green {
+    background-color: #009245;
+    background-image: linear-gradient(#009245 60%,#8bc53f 100%);
+}
+
+.events__navy {
+    background-color: #282634;
+    background-image: linear-gradient(#615c7e 60%,#282634 100%);
+}

@@ -1,3 +1,11 @@
+https://blog.csdn.net/ligang2585116/article/details/52756567
+https://juejin.im/post/5b924c6ce51d450e5f3d240f
+https://jsfiddle.net/matehu/w7h81xz2/
+https://d3-wiki.readthedocs.io/zh_CN/master/Ordinal-Scales/?q=rangeRoundBands&check_keywords=yes&area=default
+https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb
+https://auth0.com/blog/real-time-charts-using-angular-d3-and-socket-io/
+http://localhost:4200/products/1
+apm list --installed --bare
 npm install font-awesome
 yarn global add @angular/cli
 ng g c products/product-detail --flat
