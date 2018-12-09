@@ -7,13 +7,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent }     from './app.component';
 import { CustomerComponent } from './customers/customer.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { MarketChartComponent } from './market-chart/market-chart.component';
 import { ProductModule } from './products/product.module';
 
 @NgModule({
   declarations: [//
     AppComponent,
     WelcomeComponent,
-    CustomerComponent
+    CustomerComponent,
+    MarketChartComponent
   ],
   imports: [//
     BrowserModule,
@@ -27,6 +29,7 @@ import { ProductModule } from './products/product.module';
     ProductModule,
     ReactiveFormsModule
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

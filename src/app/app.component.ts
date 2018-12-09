@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {MarketStatusService} from './market-status.service';
+import {Observable} from 'rxjs';
+import {MarketPrice} from './market-price';
 
 @Component({
   selector: 'pm-root',
@@ -14,6 +17,7 @@ import { Component } from '@angular/core';
         </ul>
     </nav>
     <div class='container'>
+      <app-market-chart [marketStatus]="marketStatusToPlot"></app-market-chart>
       <router-outlet></router-outlet>
     </div>
     `,
@@ -21,4 +25,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   pageTitle: string  = 'Angular: Getting Started';
+  marketStatus: MarketPrice[];
+  marketStatusToPlot: MarketPrice[];
+
+  constructor(private marketStatusSvc: MarketStatusService) {}
+
+  ngOnInit(): void {
+    console.log('In OnInit');
+    this.marketStatusSvc.getInitialMarketStatus()
+    .subscribe( prices => {
+        this.marketStatus = prices;
+        this.marketStatusToPlot = prices;
+      }
+    );
+  }
 }
