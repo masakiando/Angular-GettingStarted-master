@@ -7,3 +7,113 @@ https://www.bongtechs.com/angular2-architecture/
 http://neos21.hatenablog.com/entry/2017/09/25/080000
 https://www.bongtechs.com/angular2-architecture/
 https://www.draw.io/#G1X9l7gFne3AEuGpNIqgWGG5Te0xy0ZCAC
+"open:src": "babel-node ./node_modules/.bin/nod tools/srcServer.js",
+"start": "npm-run-all --parallel knex test:watch open:src lint:watch",
+"knex": "knex migrate:rollback --env test && knex migrate:latest --env test && knex seed:run --env test",
+「atom-beautify」【Ctrl】+【Alt】+【B】
+symbols-tree-view package ctrl-alt-o
+tree ProjectsRoot コマンド-alt-o
+フルパス　コント-シフト-c
+
+JSONPlaceholder
+https://jsonplaceholder.typicode.com/
+
+yarn start
+srcServer.js書き換えしたならdistServer.jsも変更する
+yarn build
+git add .
+git commit -m "heroku でcloudinaryエラーのため修正必要"
+git push
+heroku ps:scale web=1
+git push heroku master
+https://safe-brushlands-47729.herokuapp.com/
+heroku ps:scale web=0
+
+heroku デプロイ失敗した時
+heroku logs --tail
+
+heroku restart
+heroku ps:scale web=0
+heroku ps:scale web=1
+yarn start
+
+
+DROP TABLE テーブル名;Table削除
+DELETE FROM テーブル名;Table内全行削除
+
+heroku psqlアクセス方法
+https://qiita.com/akiko-pusu/items/305e291465d6aac04bf3
+heroku pg:psql postgresql-XXXXX-XXXXX --app safe-XXXXXXXXX-XXXXX
+
+PyCharmでherokuのDBアクセス方法
+https://pleiades.io/help/pycharm/connecting-to-a-database.html
+
+ローカルpsql起動
+psql
+CREATE DATABASE 任意DB名;　テーブル名作成
+注意　;;;;;;;;;;;;;;;;;;;ないとだめだよ！
+CREATE DATABASE　の　メッセージが出たらOK
+\l
+\c DB名
+\c test1234demotest;
+\c test1234demodev;
+\d
+\d 「テーブル名」
+SELECT * FROM
+テーブル名」
+
+
+nvm use 8.9.0
+
+yarn global add
+yarn init
+yarn install
+yarn add <>
+yarn add -D <>
+yarn remove <>
+
+react-monocle react-monocle
+monocle -b src/index.js -c src/index.html
+
+http
+# data insert(post,put)する*.jsonはProjectsRootに置く
+$
+http -v get localhost:3311/categories
+$
+http -v get localhost:3000/api/attribute/26
+
+http -v post localhost:3000/api/users < demoreq.json
+$ put
+http -v put localhost:3000/api/startkit/91<demoreq.json
+$
+http -v delete localhost:3000/api/startkit/49
+
+curl -X GET http://127.0.0.1:3000/api/startkit
+curl -X GET http://127.0.0.1:3000/api/startkit/1
+curl -X POST --data "name=Whisky&breed=annoying&age=3&sex=f" \http://127.0.0.1:3000/api/startkit
+curl -X PUT --data "name=Whisky&breed=annoying&age=3&sex=f" \http://127.0.0.1:3000/api/startkit
+curl -X DELETE http://127.0.0.1:3000/api/startkit
+//
+// ***** migrate *****//
+マイグれファイル　1生成 ⏩ 2実行　⏩　シードファイル　3生成　⏩ 4実行
+knex migrate:make connect_categories_and_attribute_keys
+knex migrate:latest --env development
+knex seed:make connect_categories_and_attribute_keys --env development
+knex seed:run --env development
+
+実行
+knex migrate:latest --env test
+
+テストシード生成
+knex seed:make categories --env test
+テストシード実行
+knex seed:run --env test
+本番シード生成
+knex seed:make categories --env production
+本番シード実行
+knex seed:run --env production
+production
+
+knex migrate:rollback --env development
+knex migrate:latest --env development
+knex seed:run --env development
