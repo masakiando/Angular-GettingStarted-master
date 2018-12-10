@@ -11,6 +11,7 @@ import {MarketPrice} from './market-price';
         <ul class='nav nav-pills'>
           <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/welcome']">Home</a></li>
           <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/products']">Product List</a></li>
+          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/aaa']">aaa List</a></li>
           <li class='nav-item'><a class='nav-link' routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}"
                 [routerLink]="['/customer']">Sign up</a>
           </li>

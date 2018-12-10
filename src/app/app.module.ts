@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent }     from './app.component';
 import { CustomerComponent } from './customers/customer.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { AAAComponent } from './aaa/aaa-list.component';
 import { MarketChartComponent } from './market-chart/market-chart.component';
 import { ProductModule } from './products/product.module';
 
@@ -15,7 +16,8 @@ import { ProductModule } from './products/product.module';
     AppComponent,
     WelcomeComponent,
     CustomerComponent,
-    MarketChartComponent
+    MarketChartComponent,
+    AAAComponent
   ],
   imports: [//
     BrowserModule,
@@ -23,6 +25,7 @@ import { ProductModule } from './products/product.module';
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       { path: 'customer', component: CustomerComponent },
+      { path: 'aaa', component: AAAComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),

@@ -1,0 +1,62 @@
+[
+  {
+    "aaaId": 1,
+    "language": "Rust",
+    "value": 78.9,
+    "color": '#000000'
+  },
+  {
+    "aaaId": 2,
+    "language": "Kotlin",
+    "value": 75.1,
+    "color": '#00a2ee'
+  },
+  {
+    "aaaId": 3,
+    "language": "Python",
+    "value": 68.0,
+    "color": '#fbcb39'
+  },
+  {
+    "aaaId": 4,
+    "language": "TypeScript",
+    "value": 67.0,
+    "color": '#007bc8'
+  },
+  {
+    "aaaId": 5,
+    "language": "Go",
+    "value": 65.6,
+    "color": '#65cedb'
+  },
+  {
+    "aaaId": 6,
+    "language": "Swift",
+    "value": 65.1,
+    "color": '#ff6e52'
+  },
+  {
+    "aaaId": 7,
+    "language": "JavaScript",
+    "value": 61.9,
+    "color": '#f9de3f'
+  },
+  {
+    "aaaId": 8,
+    "language": "C#",
+    "value": 60.4,
+    "color": '#5d2f8e'
+  },
+  {
+    "aaaId": 9,
+    "language": "F#",
+    "value": 59.6,
+    "color": '#008fc9'
+  },
+  {
+    "aaaId": 10,
+    "language": "Clojure",
+    "value": 59.6,
+    "color": '#507dca'
+  }
+];
