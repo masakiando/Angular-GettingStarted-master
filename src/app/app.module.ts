@@ -8,16 +8,24 @@ import { AppComponent }     from './app.component';
 import { CustomerComponent } from './customers/customer.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { AAAComponent } from './aaa/aaa-list.component';
+import { TaskListComponent } from './tasks/task-list.component';
+import { TaskComponent } from './tasks/task.component';
+import { EnterTaskComponent } from './tasks/enter-task.component';
 import { MarketChartComponent } from './market-chart/market-chart.component';
 import { ProductModule } from './products/product.module';
-
+import { CheckboxComponent } from './ui/checkbox/checkbox.component';
+import {TaskService} from './tasks/task.service';
 @NgModule({
   declarations: [//
     AppComponent,
     WelcomeComponent,
     CustomerComponent,
     MarketChartComponent,
-    AAAComponent
+    AAAComponent,
+    TaskListComponent,
+    TaskComponent,
+    EnterTaskComponent,
+    CheckboxComponent
   ],
   imports: [//
     BrowserModule,
@@ -32,7 +40,7 @@ import { ProductModule } from './products/product.module';
     ProductModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,8 @@ apm list --installed --bare
 npm install font-awesome
 yarn global add @angular/cli
 ng g c products/product-detail --flat
+ng g c checkbox/checkbox --flat
+ng generate component checkbox
 ng new hello-world
 ng
 https://www.bongtechs.com/angular2-architecture/

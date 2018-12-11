@@ -17,6 +17,7 @@ import {MarketPrice} from './market-price';
           </li>
         </ul>
     </nav>
+    <mac-task-list></mac-task-list>
     <div class='container'>
       <app-market-chart [marketStatus]="marketStatusToPlot"></app-market-chart>
       <router-outlet></router-outlet>
