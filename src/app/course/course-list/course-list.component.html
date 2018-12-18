@@ -1,0 +1,26 @@
+    <div class='table-responsive'>
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>watchHref</th>
+            <th>authorId</th>
+            <th>length</th>
+            <th>category</th>
+            <th>done</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let course of courses">
+            <td>{{course.id}}</td>
+            <td>{{course.title}}</td>
+            <td>{{course.watchHref}}</td>
+            <td>{{course.authorId}}</td>
+            <td>{{course.length}}</td>
+            <td>{{course.category}}</td>
+            <td>{{course.done}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>

@@ -1,5 +1,4 @@
-import { Component, Output,
-         ViewEncapsulation, EventEmitter } from '@angular/core';
+import { Component, Output, ViewEncapsulation, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'mac-enter-task',
@@ -8,8 +7,8 @@ import { Component, Output,
 })
 export class EnterTaskComponent {
   @Output() outEnterTask = new EventEmitter<string>();
+
   enterTask(titleInput: HTMLInputElement) {
-    debugger
     this.outEnterTask.emit(titleInput.value);
     titleInput.value = '';
     titleInput.focus();

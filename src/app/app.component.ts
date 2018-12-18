@@ -5,28 +5,11 @@ import {MarketPrice} from './market-price';
 
 @Component({
   selector: 'pm-root',
-  template: `
-    <nav class='navbar navbar-expand navbar-light bg-light'>
-        <a class='navbar-brand'>{{pageTitle}}</a>
-        <ul class='nav nav-pills'>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/welcome']">Home</a></li>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/products']">Product List</a></li>
-          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/aaa']">aaa List</a></li>
-          <li class='nav-item'><a class='nav-link' routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}"
-                [routerLink]="['/customer']">Sign up</a>
-          </li>
-        </ul>
-    </nav>
-    <mac-task-list></mac-task-list>
-    <div class='container'>
-      <app-market-chart [marketStatus]="marketStatusToPlot"></app-market-chart>
-      <router-outlet></router-outlet>
-    </div>
-    `,
+  templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pageTitle: string  = 'Angular: Getting Started';
+  pageTitle: string = 'Angular: Getting Started';
   marketStatus: MarketPrice[];
   marketStatusToPlot: MarketPrice[];
 

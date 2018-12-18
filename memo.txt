@@ -1,3 +1,8 @@
+ng generate component --spec false -ve none course/course-list
+ng generate service --spec false course/course
+
+
+
 https://blog.csdn.net/ligang2585116/article/details/52756567
 https://juejin.im/post/5b924c6ce51d450e5f3d240f
 https://jsfiddle.net/matehu/w7h81xz2/

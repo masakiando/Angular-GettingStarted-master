@@ -1,5 +1,4 @@
-import {Component, Input, Output,
-  ViewEncapsulation, EventEmitter} from '@angular/core';
+import { Component, Input, Output, ViewEncapsulation, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'mac-checkbox',
@@ -12,7 +11,7 @@ export class CheckboxComponent {
   @Output() outCheck = new EventEmitter<boolean>();
 
   check(checked: boolean) {
-    debugger
+    console.log(checked);
     this.outCheck.emit(checked);
   }
 }
